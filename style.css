@@ -2,7 +2,7 @@ body{
     background: linear-gradient(rgb(2, 9, 7),rgb(0, 87, 96));
     font-family: 'Poppins','Roboto';
     color: aliceblue;
-    min-height: 100vh;
+    min-height: 100svh;
 }
 
 .container{
