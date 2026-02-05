@@ -16,7 +16,7 @@ body{
 }
 
 .location,.current-weather{
-    width: 80%;
+    width: 100%;
     padding: 8px;
     border-radius: 16px;
     display: flex;
