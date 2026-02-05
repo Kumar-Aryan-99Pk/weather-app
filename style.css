@@ -1,8 +1,8 @@
 body{
-    height: 100svh;
     background: linear-gradient(rgb(2, 9, 7),rgb(0, 87, 96));
     font-family: 'Poppins','Roboto';
     color: aliceblue;
+    min-height: 100vh;
 }
 
 .container{
@@ -54,20 +54,26 @@ body{
     font-size: 1.8rem;
 }
 
+#forecast-title{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
 .today-forecast{
-    border: 2px solid white;
-    height: 120px;
     width: 90%;
     display: flex;
+    align-items: center;
     gap: 12px;
-    overflow-x: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
     scroll-behavior: smooth;
-    padding: 10px;
-    
+}
+
+.today-forecast::-webkit-scrollbar{
+    display: none;
 }
 
 .today-forecast-card{
-    flex: 1 0 120px;
+    flex: 0 0 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,4 +81,12 @@ body{
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
+}
+
+
+@media screen and (min-width: 1015px) {
+    .today-forecast{
+        width: auto;
+    }
+ 
 }
